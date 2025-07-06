@@ -78,7 +78,7 @@ const workoutPlan = {
       { name: "Jogging", sets: "15 min", video: "https://youtube.com/watch?v=Cg2ZKxPH8dE" },
       { name: "Jump Rope", sets: "3x2min", video: "https://youtube.com/watch?v=1BZM2Vre5oc" },
       { name: "Stair Climbing", sets: "10 min", video: "https://youtube.com/watch?v=qLp36gEal5M" },
-      { name: "Dancing", sets: "20 min", video: "https://youtube.com/watch?v=gC_L9qAHVJ8" },
+      { name: "Cycling", sets: "20 min", video: "https://youtube.com/watch?v=gC_L9qAHVJ8" },
       { name: "Stretching", sets: "10 min", video: "https://youtube.com/watch?v=g_tea8ZNk5A" }
     ]
   }

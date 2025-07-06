@@ -9,7 +9,9 @@ import { WorkoutSchedule } from "@/components/WorkoutSchedule";
 import { DietPlanner } from "@/components/DietPlanner";
 import { ProgressTracker } from "@/components/ProgressTracker";
 import { AlarmReminders } from "@/components/AlarmReminders";
-import { AICoach } from "@/components/AICoach";
+import { SmartAICoach } from "@/components/SmartAICoach";
+import { DailyTaskManager } from "@/components/TaskChecklist";
+import { WaterTracker } from "@/components/WaterTracker";
 
 const Index = () => {
   const [currentWeight, setCurrentWeight] = useState(135);
@@ -89,13 +91,14 @@ const Index = () => {
 
         {/* Main Tabs */}
         <Tabs value={currentTab} onValueChange={setCurrentTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-6 mb-6">
+          <TabsList className="grid w-full grid-cols-7 mb-6">
             <TabsTrigger value="dashboard" className="text-xs">Home</TabsTrigger>
+            <TabsTrigger value="tasks" className="text-xs">Tasks</TabsTrigger>
+            <TabsTrigger value="water" className="text-xs">Water</TabsTrigger>
             <TabsTrigger value="workout" className="text-xs">Workout</TabsTrigger>
             <TabsTrigger value="diet" className="text-xs">Diet</TabsTrigger>
             <TabsTrigger value="progress" className="text-xs">Progress</TabsTrigger>
-            <TabsTrigger value="coach" className="text-xs">Coach</TabsTrigger>
-            <TabsTrigger value="reminders" className="text-xs">Alarms</TabsTrigger>
+            <TabsTrigger value="coach" className="text-xs">AI Coach</TabsTrigger>
           </TabsList>
 
           <TabsContent value="dashboard" className="space-y-4">
@@ -122,6 +125,14 @@ const Index = () => {
             </Card>
           </TabsContent>
 
+          <TabsContent value="tasks">
+            <DailyTaskManager />
+          </TabsContent>
+
+          <TabsContent value="water">
+            <WaterTracker />
+          </TabsContent>
+
           <TabsContent value="workout">
             <WorkoutSchedule />
           </TabsContent>
@@ -135,11 +146,7 @@ const Index = () => {
           </TabsContent>
 
           <TabsContent value="coach">
-            <AICoach currentWeight={currentWeight} />
-          </TabsContent>
-
-          <TabsContent value="reminders">
-            <AlarmReminders />
+            <SmartAICoach currentWeight={currentWeight} />
           </TabsContent>
         </Tabs>
 

@@ -18,10 +18,12 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Fitness app specific variants
-        workout: "bg-gradient-primary text-primary-foreground hover:bg-primary/90 shadow-md",
-        progress: "bg-gradient-progress text-progress-foreground hover:bg-progress/90 shadow-md",
-        nutrition: "bg-gradient-nutrition text-nutrition-foreground hover:bg-nutrition/90 shadow-md",
+        // Modern fitness variants
+        workout: "bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-modern backdrop-blur-sm",
+        progress: "bg-gradient-progress text-progress-foreground hover:opacity-90 shadow-modern backdrop-blur-sm", 
+        nutrition: "bg-gradient-nutrition text-nutrition-foreground hover:opacity-90 shadow-modern backdrop-blur-sm",
+        water: "bg-gradient-water text-water-foreground hover:opacity-90 shadow-modern backdrop-blur-sm",
+        modern: "bg-gradient-card text-foreground hover:bg-gradient-primary hover:text-primary-foreground shadow-card backdrop-blur-sm border border-border/20",
       },
       size: {
         default: "h-10 px-4 py-2",

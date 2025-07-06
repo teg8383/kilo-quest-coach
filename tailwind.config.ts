@@ -66,6 +66,10 @@ export default {
 					DEFAULT: 'hsl(var(--progress))',
 					foreground: 'hsl(var(--progress-foreground))'
 				},
+				water: {
+					DEFAULT: 'hsl(var(--water))',
+					foreground: 'hsl(var(--water-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -151,7 +155,12 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-progress': 'var(--gradient-progress)',
 				'gradient-nutrition': 'var(--gradient-nutrition)',
-				'gradient-background': 'var(--gradient-background)'
+				'gradient-water': 'var(--gradient-water)',
+				'gradient-background': 'var(--gradient-background)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			backdropBlur: {
+				'xs': '2px',
 			}
 		}
 	},
