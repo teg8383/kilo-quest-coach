@@ -2,39 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Fitness App Design System - Dark Theme Optimized */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark fitness theme */
+    --background: 220 25% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 20% 12%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Fitness primary - Deep navy blue */
+    --primary: 220 60% 25%;
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 220 60% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Progress green */
+    --secondary: 145 70% 45%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Subtle backgrounds */
+    --muted: 220 15% 18%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Nutrition orange accent */
+    --accent: 25 95% 60%;
+    --accent-foreground: 220 25% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 75% 55%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 220 60% 35%;
+
+    /* Fitness specific colors */
+    --workout: 220 60% 25%;
+    --workout-foreground: 210 40% 98%;
+    --nutrition: 25 95% 60%;
+    --nutrition-foreground: 220 25% 8%;
+    --progress: 145 70% 45%;
+    --progress-foreground: 210 40% 98%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-progress: linear-gradient(135deg, hsl(var(--progress)), hsl(145 70% 55%));
+    --gradient-nutrition: linear-gradient(135deg, hsl(var(--nutrition)), hsl(35 95% 65%));
+    --gradient-background: linear-gradient(180deg, hsl(220 25% 8%), hsl(220 25% 6%));
+
+    /* Shadows with fitness theme */
+    --shadow-fitness: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.2);
+    --shadow-progress: 0 4px 20px hsl(var(--progress) / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 

@@ -1,0 +1,21 @@
+{
+  "name": "FitJourney - Personal Fitness App",
+  "short_name": "FitJourney",
+  "description": "Your personalized fitness companion for weight loss and healthy living",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1d29",
+  "theme_color": "#3b4764",
+  "orientation": "portrait",
+  "categories": ["health", "fitness", "lifestyle"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "permissions": [
+    "notifications"
+  ]
+}
